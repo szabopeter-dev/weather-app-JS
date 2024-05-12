@@ -9,7 +9,7 @@ Instant Weather Updates: Enter a city name to get current temperature and weathe
 Interactive User Interface: Clean and minimalistic design, with real-time data fetching.
 
 <h3>Technologies Used</h3>
-- Basic JavaScript Components
-- Object Literals
-- Document Object Model (DOM)
-- ASYNC JavaScript
+- Basic JavaScript Components<br>
+- Object Literals<br>
+- Document Object Model (DOM)<br>
+- ASYNC JavaScript<br>
