@@ -9,7 +9,7 @@ Instant Weather Updates: Enter a city name to get current temperature and weathe
 Interactive User Interface: Clean and minimalistic design, with real-time data fetching.
 
 Technologies Used
-Basic JavaScript Components: Utilizes core JavaScript syntax and operations to manage application logic.
-Object Literals: Structured data representation for organizing weather data.
-Document Object Model (DOM): Dynamic content manipulation based on fetched weather data.
-ASYNC JavaScript: Makes use of asynchronous JavaScript to handle API requests seamlessly without blocking the UI.
+- Basic JavaScript Components
+- Object Literals
+- Document Object Model (DOM)
+- ASYNC JavaScript
