@@ -4,12 +4,12 @@ const details = document.querySelector('.details');
 const time = document.querySelector('img.time');
 const icon = document.querySelector('.icon img')
 
+const forecast = new Forecast();
+
 const updateUI = (data) => {
 
     console.log(data);
-    //destructuring the data 
-    /* const cityDets = data.cityDets;
-    const weather = data.weather; */
+  
 
     const { cityDets, weather} = data;
 
@@ -32,8 +32,9 @@ const updateUI = (data) => {
 
 
     let timeSrc = null;
+    console.log(weather.IsDayTime)
     if(weather.IsDayTime === true){
-        timeSrc = 'img/day.svg';
+        timeSrc = 'img/days.svg';
     }else {
         timeSrc = 'img/night.svg';
     }
@@ -50,17 +51,6 @@ const updateUI = (data) => {
 
 };
 
-const updateCity = async(city) => {
-
-    const cityDets = await GettheCity(city);
-    const weather = await GetWeather(cityDets.Key);
-    
-
-    return {cityDets,weather} 
-
-};
-
-
 cityForm.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -69,7 +59,7 @@ cityForm.addEventListener('submit', e => {
     cityForm.reset();
 
     //update the ui with new city
-    updateCity(city)
+    forecast.updateCity(city)
     .then(data => {
         updateUI(data);
   }).catch(err => {
